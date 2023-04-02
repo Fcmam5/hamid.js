@@ -1,6 +1,6 @@
 {
   "name": "hamid.js",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Trigger an action if the user is idle",
   "main": "dist/index.js",
   "scripts": {
