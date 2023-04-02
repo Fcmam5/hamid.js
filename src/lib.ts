@@ -1,9 +1,7 @@
 import { defaultUserEvents } from './constants';
 
 export default class Hamid {
-  listenToEvents: Array<keyof WindowEventMap> = defaultUserEvents; // TODO: Parameterize me
-  //   onBeforeKickOut; TODO
-  //   storeTimer TODO
+  listenToEvents: Array<keyof WindowEventMap> = defaultUserEvents;
 
   idleTimer?: NodeJS.Timeout;
 

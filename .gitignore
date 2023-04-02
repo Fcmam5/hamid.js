@@ -75,13 +75,6 @@ typings/
 # parcel-bundler cache (https://parceljs.org/)
 .cache
 
-# Next.js build output
-.next
-
-# Nuxt.js build / generate output
-.nuxt
-dist
-
 # Gatsby files
 .cache/
 # Comment in the public line in if your project uses Gatsby and *not* Next.js
@@ -106,3 +99,6 @@ dist
 # stryker temp files
 .stryker-tmp
 reports/mutation/
+
+dist
+TODO.md

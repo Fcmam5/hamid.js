@@ -4,13 +4,16 @@
   "description": "Trigger an action if the user is idle",
   "main": "dist/index.js",
   "scripts": {
+    "build": "tsc --build --sourcemap",
+    "build:browser": "",
     "test": "jest",
     "test:watch": "npm run test -- --watch",
     "lint": "eslint src/** --ext .ts",
     "lint:fix": "npm run lint -- --fix",
     "format": "prettier --write .",
     "format:check": "prettier --check src/**/*.js",
-    "mutate": "stryker run"
+    "mutate": "stryker run",
+    "prebuild": "rm -fr dist"
   },
   "files": [
     "dist/src/*"
