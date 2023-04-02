@@ -1,8 +1,8 @@
 {
   "name": "hamid.js",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Trigger an action if the user is idle",
-  "main": "dist/index.js",
+  "main": "dist/lib.js",
   "scripts": {
     "build": "tsc --build --sourcemap",
     "test": "jest",
@@ -15,7 +15,7 @@
     "prebuild": "rm -fr dist"
   },
   "files": [
-    "dist/src/*"
+    "dist/*"
   ],
   "repository": {
     "type": "git",
@@ -39,7 +39,7 @@
     "jest-environment-jsdom": "^29.5.0",
     "prettier": "^2.8.7",
     "prettier-eslint": "^15.0.1",
-    "ts-jest": "^29.0.5",
+    "ts-jest": "^29.1.0",
     "typescript": "^5.0.3"
   }
 }

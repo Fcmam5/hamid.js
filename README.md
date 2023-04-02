@@ -4,6 +4,14 @@
 
 A library that triggers an action if the user is inactive after a period of time.
 
+- [HAMID.js](#hamidjs)
+  - [Use cases](#use-cases)
+    - [Banking and payment services](#banking-and-payment-services)
+    - [Chat and online games](#chat-and-online-games)
+  - [Usage](#usage)
+  - [Origin of the library's name](#origin-of-the-librarys-name)
+  - [License](#license)
+
 ## Use cases
 
 ### Banking and payment services
@@ -15,6 +23,19 @@ PSD 2 regulation for example requires logging out the user if they're inactive f
 
 Online chat rooms, and games may have a requirement of triggering an action if a user is inactive for a set period of time.
 
+## Usage
+
+Install the library using [npm](https://www.npmjs.com/package/hamid.js) with `npm i hamid.js`, or you can use it from a CDN with:
+
+```html
+    <script src="https://unpkg.com/browse/hamid.js@0.0.1/dist/lib.js"></script>
+```
+
+Then in your script
+```js
+      const logMeOut = () => alert('You shall be logged out my friend');
+      new Hamid(logMeOut);
+```
 ## Origin of the library's name
 
 It's a local meme in Algeria, especially in Oran. It's a scene from a famous comedy show called "Bila Houdoud" where a bus driver asked his tickets man (Hamid) to kick-out someone.

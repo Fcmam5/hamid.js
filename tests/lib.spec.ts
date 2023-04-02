@@ -1,6 +1,5 @@
 jest.useFakeTimers();
 
-import { defaultUserEvents } from '../src/constants';
 import Hamid from '../src/lib';
 
 describe('Lib', () => {
@@ -12,7 +11,7 @@ describe('Lib', () => {
 
       lib = new Hamid(kickOutFnMock);
 
-      expect(addEventListenerSpy).toHaveBeenCalledTimes(defaultUserEvents.length);
+      expect(addEventListenerSpy).toHaveBeenCalledTimes(6);
     });
   });
 
