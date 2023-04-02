@@ -5,7 +5,6 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc --build --sourcemap",
-    "build:browser": "",
     "test": "jest",
     "test:watch": "npm run test -- --watch",
     "lint": "eslint src/** --ext .ts",

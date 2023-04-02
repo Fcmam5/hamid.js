@@ -15,6 +15,18 @@
     </p>
     <img src="./hamid-ser7ah.gif" alt="Bila Houdoud gif" />
 
+    <!-- What a shame! I will bundle the library for the browser and clean up this -->
+    <script>
+      window.exports = {};
+    </script>
     <script src="../dist/lib.js"></script>
+
+    <script>
+      window.exports = {};
+
+      const logMeOut = () => alert('You shall be logged out my friend');
+
+      new Hamid(logMeOut, 7);
+    </script>
   </body>
 </html>

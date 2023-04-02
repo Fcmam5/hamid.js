@@ -1,5 +1,3 @@
-import { defaultUserEvents } from './constants';
-
 export default class Hamid {
   listenToEvents: Array<keyof WindowEventMap> = defaultUserEvents;
 
@@ -32,4 +30,13 @@ export default class Hamid {
 }
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-export type CallbackFunctionVariadic = (...args: any[]) => void;
+type CallbackFunctionVariadic = (...args: any[]) => void;
+
+const defaultUserEvents: Array<keyof WindowEventMap> = [
+  'mousemove',
+  'touchstart',
+  'scroll',
+  'resize',
+  'keydown',
+  'click',
+];
