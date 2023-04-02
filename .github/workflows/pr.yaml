@@ -13,8 +13,6 @@ on:
 
 jobs:
   buildAndTest:
-    # env:
-    #   STRYKER_DASHBOARD_API_KEY: ${{ secrets.STRYKER_DASHBOARD_API_KEY }}
     name: Build and test
     runs-on: ubuntu-latest
 
@@ -33,7 +31,9 @@ jobs:
       - run: npm run build --if-present
       - run: npm test
       - run: npm run lint
-      # - run: npm run mutate
-      # - uses: codecov/codecov-action@v3
-      #   with:
-      #     token: ${{ secrets.CODECOV_TOKEN }} 
+      - run: npm run mutate
+        env:
+          STRYKER_DASHBOARD_API_KEY: ${{ secrets.STRYKER_DASHBOARD_API_KEY }}
+      - uses: codecov/codecov-action@v3
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }} 

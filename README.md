@@ -1,5 +1,7 @@
 # HAMID.js
 
+[![Mutation testing badge](https://img.shields.io/endpoint?style=flat&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2FFcmam5%2Fhamid.js%2Fmain)](https://dashboard.stryker-mutator.io/reports/github.com/Fcmam5/hamid.js/main) ![Known Vulnerabilities](https://snyk.io/test/github/Fcmam5/hamid.js/badge.svg) [![codecov](https://codecov.io/gh/Fcmam5/hamid.js/branch/main/graph/badge.svg?token=L0LQ6O6Q2M)](https://codecov.io/gh/Fcmam5/hamid.js) [![npm](https://img.shields.io/npm/v/hamid.js)](https://www.npmjs.com/package/hamid.js)
+
 A library that triggers an action if the user is inactive after a period of time.
 
 ## Use cases
